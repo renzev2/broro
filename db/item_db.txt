@@ -6768,20 +6768,19 @@
 // Structure of Database:
 // ID,AegisName,Name,Type,Buy,Sell,Weight,ATK,DEF,Range,Slots,Job,Upper,Gender,Loc,wLV,eLV,Refineable,View,{ Script },{ OnEquip_Script },{ OnUnequip_Script }
 //customize headgear
-30000,_bvhelm,Black Valkyrie Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3000,{ bonus bStr,10; bonus bAgi,5; bonus bDex,5; bonus2 bSubRace,7,10; },{},{}
-30001,_gvhelm,Green Valkyrie Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3001,{},{},{}
+30000,_bvhelm,Black Valkyrie Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3000,{},{},{}
 30002,_blackvhelm,Black Valkyrie Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3002,{   },{},{}
 30003,_brownvhelm,Brown Valkyrie Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3003,{   },{},{}
 30004,_rvhelm,Red Valkyrie Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3004,{},{},{}
 30005,_gvhelm,White Valkyrie Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3005,{},{},{}
 30015,_vikinghelm,Viking Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3015,{},{},{}
-30016,_dragonhelm,Dragon Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3016,{ bonus bVit,3; bonus bInt,1; bonus bLuk,1; bonus2 bSubRace,7,10; if(isequipped(30012)) { bonus bMaxHPrate,5;} },{},{}
-30017,_sniping,Sniping Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3017,{ bonus bDex,3; bonus bAgi,1; bonus bStr,1; bonus2 bSkillAtk,46,10;},{},{}
-30018,_minstrel,Minstrel Hat,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3018,{ bonus bInt,3; bonus bLuk,1; bonus bVit,1; bonus bMatkRate,10;},{},{}
+30016,_dragonhelm,Dragon Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3016,{ bonus bVit,3; bonus2 bSubRace,7,10; if(isequipped(30012)) { bonus bMaxHPrate,5;} },{},{}
+30017,_sniping,Sniping Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3017,{ bonus bDex,3; bonus2 bSkillAtk,46,10;},{},{}
+30018,_minstrel,Minstrel Hat,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3018,{ bonus bInt,3; bonus bMatkRate,10; bonus2 bSubRace,7,10; },{},{}
 30019,_trav,Traveler's Hat,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3019,{ bonus bCritAtkRate,10; bonus bLuk,10; bonus bFlee2,5; },{},{}
-30020,_hokage,Hokage Hat,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3020,{ bonus bStr,10; },{},{}
-30031,_bviking,Black Viking Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3031,{ bonus bStr,3; bonus bAgi,1; bonus bDex,1; bonus2 bSubRace,7,10; },{},{}
-30032,_rviking,Red Viking Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3032,{ bonus bStr,3; bonus bAgi,1; bonus bDex,1; bonus2 bAddRace,7,10; },{},{}
+30020,_hokage,Hokage Hat,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3020,{ bonus bStr,15; },{},{}
+30031,_bviking,Black Viking Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3031,{ bonus bStr,3; bonus2 bSubRace,7,10; },{},{}
+30032,_rviking,Red Viking Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3032,{ bonus bStr,3; bonus2 bAddRace,7,10; },{},{}
 
 
 // Items Database
@@ -6816,8 +6815,8 @@
 // Items Database
 // Structure of Database:
 // ID,AegisName,Name,Type,Buy,Sell,Weight,ATK,DEF,Range,Slots,Job,Upper,Gender,Loc,wLV,eLV,Refineable,View,{ Script },{ OnEquip_Script },{ OnUnequip_Script }
-30021,_hollow,Hollow Mask,5,0,,200,,0,,1,0xFFFFFFFE,15,2,512,,0,1,3021,{ bonus bCritAtkRate,3 ; bonus bAtk,25; },{},{}
-30022,_elves,Elf Ears,5,0,,200,,0,,1,0xFFFFFFFE,15,2,512,,0,1,3022,{ bonus bMatkRate,3; bonus bAllStats,1; },{},{}
+30021,_hollow,Hollow Mask,5,0,,200,,0,,1,0xFFFFFFFE,15,2,512,,0,1,3021,{ bonus bCritAtkRate,3 ; bonus bAtk,30; },{},{}
+30022,_elves,Elf Ears,5,0,,200,,0,,1,0xFFFFFFFE,15,2,512,,0,1,3022,{ bonus bMatkRate,5; bonus bAllStats,1; },{},{}
 30023,_robo,Robo Ears,5,0,,200,,0,,1,0xFFFFFFFE,15,2,512,,0,1,3023,{ bonus2 bSubRace,7,3;  bonus bMaxHPrate,3; },{},{}
 30024,_android,Android Ears,5,0,,200,,0,,1,0xFFFFFFFE,15,2,512,,0,1,3024,{ bonus4 bAutoSpellWhenHit,249,2,50,0; bonus bAllStats,1; },{},{}
 
@@ -6836,14 +6835,24 @@
 // Items Database
 // Structure of Database:
 // ID,AegisName,Name,Type,Buy,Sell,Weight,ATK,DEF,Range,Slots,Job,Upper,Gender,Loc,wLV,eLV,Refineable,View,{ Script },{ OnEquip_Script },{ OnUnequip_Script }
-30400,Credit_Card,Credit,3,0,,10,,,,,,,,,,,,,{},{},{}
+30400,Credit_Card,Credit,3,0,,,,,,,,,,,,,,,{},{},{}
+30401,Newbie_Box,OverkillRO Newbie Box,2,,,,,,,,0xFFFFFFFF,7,2,,,,,,{ getitem(30001),1; getitem(30035),2; getitem(30036),2; getitem(30037),2; getitem(30038),2; getitem(504),50; getitem(12263),3; getitem(4142),1;},{},{}
+30402,Ygg_Box,Yggdrasil_Berry_Box_10pcs,2,,,,,,,,0xFFFFFFFF,7,2,,,,,,{ getitem(607),10; },{},{}
+30403,Ygg_Box,Yggdrasil_Berry_Box_50pcs,2,,,,,,,,0xFFFFFFFF,7,2,,,,,,{ getitem(607),50; },{},{}
 
 
 // Items Database
 // Structure of Database:
 // ID,AegisName,Name,Type,Buy,Sell,Weight,ATK,DEF,Range,Slots,Job,Upper,Gender,Loc,wLV,eLV,Refineable,View,{ Script },{ OnEquip_Script },{ OnUnequip_Script }
 //Valkyrie set
-2357,Valkyrie_Armor,Valkyrian Armor,5,0,,2800,,6,,1,0xFFFFFFFE,15,2,16,,0,1,0,{ bonus2 bResEff,Eff_Freeze,10000; bonus bMdef,5; if(isequipped(2524,2421)) { bonus2 bResEff,Eff_Silence,5000; bonus2 bResEff,Eff_Stun,5000; } },{},{}
-2115,Valkyrja's_Shield,Valkyrja's Shield,5,0,,500,,8,,1,0xFFFFFFFE,15,2,32,,0,1,4,{ bonus2 bResEff,Eff_Stone,10000; bonus bMdef,5; if(isequipped(2357)) { bonus2 bResEff,Eff_Bleeding,5000; } },{},{}
-2524,Valkyrie_Manteau,Valkyrian Manteau,5,0,,500,,3,,1,0xFFFFFFFE,15,2,4,,0,1,0,{ bonus bMdef,5; if(BaseClass==Job_Thief||BaseClass==Job_Archer||BaseClass==Job_Acolyte) bonus bFlee2,5+(getequiprefinerycnt(EQI_GARMENT)*1); else if(BaseClass==Job_Swordman||BaseClass==Job_Merchant||BaseClass==Job_Mage) bonus bShortWeaponDamageReturn,5+(getequiprefinerycnt(EQI_GARMENT)*1); },{},{}
-2421,Valkyrie_Shoes,Valkyrian Shoes,5,0,,500,,4,,1,0xFFFFFFFE,15,2,64,,0,1,0,{ bonus bSpeedRate,20; bonus bMaxHPrate,10; bonus bMaxSP,10; bonus bMdef,5; },{},{}
+2357,Valkyrie_Armor,Valkyrian Armor,5,0,,2800,,6,,1,0xFFFFFFFE,15,2,16,,0,1,0,{ bonus bAllStats,1; bonus2 bResEff,Eff_Freeze,10000; bonus bMdef,2; if(isequipped(2524,2421)) { bonus2 bResEff,Eff_Silence,5000; bonus2 bResEff,Eff_Stun,5000; } },{},{}
+2115,Valkyrja's_Shield,Valkyrja's Shield,5,0,,500,,8,,1,0xFFFFFFFE,15,2,32,,0,1,4,{ bonus2 bResEff,Eff_Stone,10000; bonus bMdef,3; if(isequipped(2357)) { bonus2 bResEff,Eff_Bleeding,5000; } },{},{}
+2524,Valkyrie_Manteau,Valkyrian Manteau,5,0,,500,,3,,1,0xFFFFFFFE,15,2,4,,0,1,0,{ bonus bMdef,2; bonus bAllStats,1; if(BaseClass==Job_Thief||BaseClass==Job_Archer||BaseClass==Job_Acolyte) bonus bFlee2,4+(getequiprefinerycnt(EQI_GARMENT)*1); else if(BaseClass==Job_Swordman||BaseClass==Job_Merchant||BaseClass==Job_Mage) bonus bShortWeaponDamageReturn,4+(getequiprefinerycnt(EQI_GARMENT)*1); },{},{}
+2421,Valkyrie_Shoes,Valkyrian Shoes,5,0,,500,,4,,1,0xFFFFFFFE,15,2,64,,0,1,0,{ bonus bSpeedRate,20; bonus bMaxHPrate,10; bonus bMaxSP,10; },{},{}
+
+//Overkill set
+30035,_overkilla,Overkill Armor,5,0,,2800,,6,,1,0xFFFFFFFE,15,2,16,,0,1,0,{ bonus2 bResEff,Eff_Freeze,8000; bonus bAllStats,1; },{},{}
+30036,_overkillm,Overkill Manteau,5,0,,500,,3,,1,0xFFFFFFFE,15,2,4,,0,1,0,{ bonus bMdef,1; if(BaseClass==Job_Thief||BaseClass==Job_Archer||BaseClass==Job_Acolyte) bonus bFlee2,3+(getequiprefinerycnt(EQI_GARMENT)*1); else if(BaseClass==Job_Swordman||BaseClass==Job_Merchant||BaseClass==Job_Mage) bonus bShortWeaponDamageReturn,3+(getequiprefinerycnt(EQI_GARMENT)*1); },{},{}
+30037,_overkills,Overkill Shield,5,0,,500,,8,,1,0xFFFFFFFE,15,2,32,,0,1,4,{ bonus2 bResEff,Eff_Stone,5000; bonus bMdef,2; } },{},{}
+30038,_overkillsh,Overkill Shoes,5,0,,500,,4,,1,0xFFFFFFFE,15,2,64,,0,1,0,{ bonus bSpeedRate,10; bonus bMaxHPrate,5; bonus bMaxSP,5; },{},{}
+30001,_gvhelm,Overkill Helm,5,,,1000,,5,,1,0xFFFFFFFE,15,2,256,,0,1,3001,{ bonus2 bSubRace,7,5; bonus bAllStats,1; },{},{}
