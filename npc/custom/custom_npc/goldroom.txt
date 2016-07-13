@@ -38,7 +38,7 @@ OnInit:
 //-------------------------MONSTER SPAWN--------------------------------------------------------------------
 
 
-ordeal_1-1,0,0,0,0	monster	Gold Holder	1110,400,0,0,0
+ordeal_1-1,0,0,0,0	monster	Gold Holder	1110,1000,0,0,0
 
 ordeal_1-1,150,150,6	script	Gold Room Exit	861,{
 	warp "prontera",156,191;
