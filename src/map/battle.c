@@ -179,7 +179,7 @@ struct block_list* battle_getenemyarea(struct block_list *src, int x, int y, int
 	return bl_list[rand()%c];
 }
 
-// ƒ_??[ƒW‚Ì’x‰„
+// ãƒ€??[ã‚¸ã®é…å»¶
 struct delay_damage {
 	struct block_list *src;
 	int target;
@@ -349,7 +349,7 @@ int battle_attr_fix(struct block_list *src, struct block_list *target, int damag
 }
 
 /*==========================================
- * ƒ_??[ƒW??IŒvZ
+ * ãƒ€??[ã‚¸??Iè¨ˆç®—
  *------------------------------------------*/
 int battle_calc_damage(struct block_list *src,struct block_list *bl,struct Damage *d,int damage,int skill_num,int skill_lv,int element)
 {
@@ -938,7 +938,7 @@ int battle_calc_gvg_damage(struct block_list *src,struct block_list *bl,int dama
 }
 
 /*==========================================
- * HP/SP‹zû‚ÌŒvZ
+ * HP/SPå¸åã®è¨ˆç®—
  *------------------------------------------*/
 static int battle_calc_drain(int damage, int rate, int per)
 {
@@ -957,7 +957,7 @@ static int battle_calc_drain(int damage, int rate, int per)
 }
 
 /*==========================================
- * ?C—ûƒ_??[ƒW
+ * ?Cç·´ãƒ€??[ã‚¸
  *------------------------------------------*/
 int battle_addmastery(struct map_session_data *sd,struct block_list *target,int dmg,int type)
 {
@@ -4175,7 +4175,7 @@ struct Damage battle_calc_magic_attack(struct block_list *src,struct block_list 
 }
 
 /*==========================================
- * ‚»‚Ì‘¼ƒ_??[ƒWŒvZ
+ * ãã®ä»–ãƒ€??[ã‚¸è¨ˆç®—
  *------------------------------------------*/
 struct Damage battle_calc_misc_attack(struct block_list *src,struct block_list *target,int skill_num,int skill_lv,int mflag)
 {
@@ -4486,7 +4486,7 @@ struct Damage battle_calc_misc_attack(struct block_list *src,struct block_list *
 	return md;
 }
 /*==========================================
- * ƒ_??[ƒWŒvZˆêŠ‡?ˆ—?—p
+ * ãƒ€??[ã‚¸è¨ˆç®—ä¸€æ‹¬?ï¿½?ç”¨
  *------------------------------------------*/
 struct Damage battle_calc_attack(int attack_type,struct block_list *bl,struct block_list *target,int skill_num,int skill_lv,int count)
 {
@@ -4667,7 +4667,7 @@ int battle_damage_area( struct block_list *bl, va_list ap)
 }
 
 /*==========================================
- * ’Ê??UŒ‚?ˆ—?‚Ü‚Æ‚ß
+ * é€š??Uæ’ƒ?ï¿½?ã¾ã¨ã‚
  *------------------------------------------*/
 enum damage_lv battle_weapon_attack(struct block_list* src, struct block_list* target, unsigned int tick, int flag)
 {
@@ -5379,7 +5379,7 @@ int battle_check_target( struct block_list *src, struct block_list *target,int f
 	return (flag&state)?1:-1;
 }
 /*==========================================
- * Ë’ö”»’è
+ * å°„ç¨‹åˆ¤å®š
  *------------------------------------------*/
 bool battle_check_range(struct block_list *src, struct block_list *bl, int range)
 {
@@ -5554,16 +5554,16 @@ static const struct _battle_data {
 	{ "natural_heal_weight_rate",           &battle_config.natural_heal_weight_rate,        50,     50,     101             },
 	{ "arrow_decrement",                    &battle_config.arrow_decrement,                 1,      0,      2,              },
 	{ "max_aspd",                           &battle_config.max_aspd,                        199,    100,    199,            },
-	{ "max_walk_speed",                     &battle_config.max_walk_speed,                  300,    100,    100*DEFAULT_WALK_SPEED, },
-	{ "max_lv",                             &battle_config.max_lv,                          99,     0,      150,            },
-	{ "aura_lv",                            &battle_config.aura_lv,                         99,     0,      INT_MAX,        },
+	{ "max_walk_speed",                     &battle_config.max_walk_speed,                  310,    100,    100*DEFAULT_WALK_SPEED, },
+	{ "max_lv",                             &battle_config.max_lv,                          999,     0,      150,            },
+	{ "aura_lv",                            &battle_config.aura_lv,                         255,     0,      INT_MAX,        },
 	{ "max_hp",                             &battle_config.max_hp,                          32500,  100,    1000000000,     },
 	{ "max_sp",                             &battle_config.max_sp,                          32500,  100,    1000000000,     },
 	{ "max_cart_weight",                    &battle_config.max_cart_weight,                 8000,   100,    1000000,        },
-	{ "max_parameter",                      &battle_config.max_parameter,                   99,     10,     10000,          },
-	{ "max_baby_parameter",                 &battle_config.max_baby_parameter,              80,     10,     10000,          },
-	{ "max_third_parameter",                &battle_config.max_third_parameter,            120,     10,     10000,          },
-	{ "max_baby_third_paramater",           &battle_config.max_baby_third_paramater,       108,     10,     10000,          },
+	{ "max_parameter",                      &battle_config.max_parameter,                   255,     10,     10000,          },
+	{ "max_baby_parameter",                 &battle_config.max_baby_parameter,              255,     10,     10000,          },
+	{ "max_third_parameter",                &battle_config.max_third_parameter,            255,     10,     10000,          },
+	{ "max_baby_third_paramater",           &battle_config.max_baby_third_paramater,       255,     10,     10000,          },
 	{ "max_def",                            &battle_config.max_def,                         99,     0,      INT_MAX,        },
 	{ "over_def_bonus",                     &battle_config.over_def_bonus,                  0,      0,      1000,           },
 	{ "skill_log",                          &battle_config.skill_log,                       BL_NUL, BL_NUL, BL_ALL,         },
